@@ -34,14 +34,12 @@ def resource_setup(request):
 
 
 @allure.step('My step 1')
-@allure.severity(allure.severity_level.MINOR)
 def test_db(resource_setup):
     for k in resource_setup.keys():
         print("color {0} has id {1}".format(k, resource_setup[k]))
 
 
 @allure.step('My step 2')
-@allure.severity(allure.severity_level.BLOCKER)
 def test_red(resource_setup):
     assert resource_setup["Red"] == 1
 

@@ -1,36 +1,30 @@
 import allure
-#
-#
-# @allure.severity(allure.severity_level.MINOR)
-# def test_minor():
-#     assert False
-#
-#
-# @allure.severity(allure.severity_level.CRITICAL)
-# class TestBar:
-#
-#     # will have CRITICAL priority
-#     def test_bar(self):
-#         pass
-#
-#     # will have BLOCKER priority via a short-cut decorator
-#     @allure.severity(allure.severity_level.CRITICAL)
-#     def test_bar(self):
-#         pass
-
 import pytest
+
+
+@allure.testcase('TestCase functions')
+def test_minor():
+    assert False
+
+
+class TestBar:
+
+    def test_bar(self):
+        pass
 
 
 @pytest.fixture(scope="function")
 def resource_setup(request):
-    print("\nconnect to db")
-    db = {"Red": 1, "Blue": 2, "Green": 3}
+
+    with allure.step("resource setup"):
+        print("\nconnect to db")
+        db = {"Red": 1, "Blue": 2, "Green": 3}
 
     def resource_teardown():
-        print("\ndisconnect")
-
-    request.addfinalizer(resource_teardown)
-    return db
+        with allure.step("resource teardown"):
+            print("\ndisconnect")
+            request.addfinalizer(resource_teardown)
+            return db
 
 
 @allure.step('My step 1')

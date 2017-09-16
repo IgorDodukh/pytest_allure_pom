@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -89,8 +89,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
-    <option name="y" value="156" />
+    <option name="x" value="425" />
+    <option name="y" value="54" />
     <option name="width" value="1411" />
     <option name="height" value="995" />
   </component>
@@ -473,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505582417198</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update requirements to Allure support">
+      <created>1505584071898</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1505584071898</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -488,7 +495,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="330" y="156" width="1411" height="995" extended-state="0" />
+    <frame x="425" y="54" width="1411" height="995" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3118356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -522,7 +529,8 @@
     <MESSAGE value="update test" />
     <MESSAGE value="update testt" />
     <MESSAGE value="update testt to Allure support" />
-    <option name="LAST_COMMIT_MESSAGE" value="update testt to Allure support" />
+    <MESSAGE value="update requirements to Allure support" />
+    <option name="LAST_COMMIT_MESSAGE" value="update requirements to Allure support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -586,7 +594,7 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>

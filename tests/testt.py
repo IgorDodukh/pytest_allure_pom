@@ -3,7 +3,6 @@ import pytest
 
 
 @allure.testcase('TestCase functions')
-@allure.step('resource setup step')
 def test_minor():
     assert False
 
@@ -14,18 +13,16 @@ class TestBar:
         pass
 
 
-@allure.step('resource setup step')
 @pytest.fixture(scope="function")
 def resource_setup(request):
-
     print("\nconnect to db")
     db = {"Red": 1, "Blue": 2, "Green": 3}
 
-    @allure.step('resource teardown step')
     def resource_teardown():
         print("\ndisconnect")
-        request.addfinalizer(resource_teardown)
-        return db
+
+    request.addfinalizer(resource_teardown)
+    return db
 
 
 @allure.step('My step 1')

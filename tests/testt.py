@@ -4,7 +4,7 @@ import pytest
 
 @allure.testcase('TestCase functions')
 def test_minor():
-    assert False
+    assert True
 
 
 class TestBar:

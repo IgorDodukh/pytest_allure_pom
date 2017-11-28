@@ -1,10 +1,15 @@
 import allure
 import pytest
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 @allure.testcase('TestCase functions')
 def test_minor():
-    assert True
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver.get("http://google.com")
+    assert driver.title is not None
+    driver.quit()
+    
 
 
 class TestBar:

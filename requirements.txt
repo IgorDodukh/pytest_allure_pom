@@ -1,3 +1,5 @@
 pytest
 lxml
 pytest-allure-adaptor
+webdriver-manager
+selenium==3.4.1
